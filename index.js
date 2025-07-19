@@ -158,15 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Placeholder for fire/water animation - can be developed further
-        const canvas = container.querySelector('#emotion-canvas');
-        canvas.width = canvas.parentElement.clientWidth;
-        canvas.height = 200;
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = 'rgba(0, 100, 200, 0.1)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#fff';
-        ctx.textAlign = 'center';
-        ctx.fillText("Emotional digestion animation placeholder", canvas.width / 2, canvas.height / 2);
+      //  const canvas = container.querySelector('#emotion-canvas');
+     //   canvas.width = canvas.parentElement.clientWidth;
+     //   canvas.height = 200;
+      //  const ctx = canvas.getContext('2d');
+     //   ctx.fillStyle = 'rgba(0, 100, 200, 0.1)';
+      //  ctx.fillRect(0, 0, canvas.width, canvas.height);
+      //  ctx.fillStyle = '#fff';
+     //   ctx.textAlign = 'center';
+     //   ctx.fillText("Emotional digestion animation placeholder", canvas.width / 2, canvas.height / 2);
     }
 
     function renderModule2(container) {
