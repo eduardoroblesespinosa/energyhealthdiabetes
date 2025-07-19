@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div id="questionnaire">
                 <!-- Questions will be injected here -->
             </div>
-        <!--    <canvas id="emotion-canvas" class="mt-4 rounded"></canvas>-->
+        
         `;
         const questions = [
             "What situation in your life feels 'hard to swallow'?",
