@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #6a5acd; /* SlateBlue */
+    --secondary-color: #48d1cc; /* MediumTurquoise */
+    --light-bg: #f0f8ff; /* AliceBlue */
+    --text-color: #4a4a4a;
+    --white-color: #ffffff;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-card {
+    cursor: pointer;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.module-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+#module-content .card {
+    background-color: var(--white-color);
+    overflow-y: auto;
+}
+
+#visualization-container {
+    background-color: #000;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+#animation-canvas {
+    pointer-events: none;
+}
+
+.affirmations {
+    background-color: var(--light-bg);
+    height: 100%;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.affirmations p {
+    font-style: italic;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.affirmations p:last-child {
+    border-bottom: none;
+}
+
+#play-pause-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-pause-btn i {
+    font-size: 2rem;
+    line-height: 1; /* Center icon */
+}
+
+.bi-play-fill {
+    margin-left: 4px; /* visual centering */
+}
+
+/* New Module Styles */
+.question {
+    background-color: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem; /* Adjusted for better spacing with textarea */
+    border-left: 4px solid var(--secondary-color);
+    width: 100%; /* Ensure it spans the full width */
+    display: block; /* Make label a block element */
+}
+
+#emotion-canvas {
+    background-color: #2c3e50;
+    width: 100%;
+}
+
+#pancreas-container #hand-icon {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.7));
+}
+
+#pancreas-container #breathing-canvas {
+    pointer-events: none;
+}
+
+.healing-intention {
+    background-color: #e0f7fa; /* Light cyan */
+    border-color: var(--secondary-color);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+.calendar-day.complete {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
